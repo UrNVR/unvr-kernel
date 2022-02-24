@@ -1,0 +1,10 @@
+config BT_MTK_UART
+	tristate "Mtk bt support"
+	depends on BT_HCIUART
+	help
+	  Support MTK BT 
+
+	  Say Y here to compile support for MTK B 
+	  or say M to compile it as module
+
+

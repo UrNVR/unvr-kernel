@@ -1,0 +1,19 @@
+#
+# Alpine SoC drivers configuration
+#
+
+menuconfig AL_HAL
+        tristate "Alpine Hardware Abstraction Layer"
+        help
+          Enable this to get Alpine HAL support
+
+config ALPINE_PLATFORM
+	string "Alpine Platform Type"
+	help
+		choose Alpine SOC type (e.g. TOPROCK).
+
+config AL_ETH_FORCE_SFP_1G
+	bool "Annapurna Labs force SFP mode as 1G"
+	help
+	  Say Y here if you want to ignore LM I2C context, force SFP mode as 1G
+
